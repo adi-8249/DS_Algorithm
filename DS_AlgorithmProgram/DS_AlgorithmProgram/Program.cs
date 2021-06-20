@@ -8,6 +8,7 @@ namespace DS_AlgorithmProgram
         {
             Console.WriteLine("1:Cheking two given array of string is equal or not");
             Console.WriteLine("2:Bubble sort");
+            Console.WriteLine("3:Print Prime number from 0-1000");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -27,6 +28,10 @@ namespace DS_AlgorithmProgram
                 case 2:
                     BubbleSort bubbleSort = new BubbleSort();
                     bubbleSort.Bubble();
+                    break;
+                case 3:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Show();
                     break;
             }
 
