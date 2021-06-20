@@ -7,6 +7,7 @@ namespace DS_AlgorithmProgram
         static void Main(string[] args)
         {
             Console.WriteLine("1:Cheking two given array of string is equal or not");
+            Console.WriteLine("2:Bubble sort");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -22,6 +23,10 @@ namespace DS_AlgorithmProgram
                     {
                         Console.WriteLine("Both Array are not equal");
                     }
+                    break;
+                case 2:
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.Bubble();
                     break;
             }
 
